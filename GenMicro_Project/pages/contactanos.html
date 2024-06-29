@@ -10,7 +10,7 @@
     <header>
         <nav class="navbar navbar-expand-lg bg-body-tertiary">
             <div class="container-fluid">
-                <a class="navbar-brand" href="main.html">
+                <a class="navbar-brand" href="../index.html">
                     <img src="../Img/Poster-sinfondo.png" alt="Logo" width="140" height="108" class="d-inline-block align-text-center">
                     PhenilColi
                   </a>
@@ -20,7 +20,7 @@
               <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav">
                   <li class="nav-item">
-                    <a class="nav-link" href="main.html">Indice</a>
+                    <a class="nav-link" href="../index.html">Indice</a>
                   </li>
                   <li class="nav-item">
                     <a class="nav-link" href="informacion.html">Más información</a>
@@ -38,23 +38,30 @@
     </header>
     <main>
         <h1 style="text-align: center;"> Formulario de Contacto</h1>
-        <div class="form-floating m-2">
-            <input type="email" class="form-control" id="floatingInput" placeholder="Sandro Bryan">
-            <label for="floatingInput">Nombres</label>
-          </div>
+        <form action="https://formsubmit.co/sandro.martel013@gmail.com" method="POST">
           <div class="form-floating m-2">
-            <input type="email" class="form-control" id="floatingInput" placeholder="Martel Torres">
-            <label for="floatingInput">Apellidos</label>
-          </div>
-        <div class="form-floating m-2">
-            <input type="email" class="form-control" id="floatingInput" placeholder="name@example.com">
-            <label for="floatingInput">Correo electrónico</label>
-          </div>
+              <input type="text" class="form-control" id="floatingInput" placeholder="Sandro Bryan" name="name">
+              <label for="floatingInput name">Nombres</label>
+            </div>
+            <div class="form-floating m-2">
+              <input type="text" class="form-control" id="floatingInput" placeholder="Martel Torres" name="lastname">
+              <label for="floatingInput lastname">Apellidos</label>
+            </div>
+          <div class="form-floating m-2">
+              <input type="email" class="form-control" id="floatingInput" placeholder="name@example.com" name="email">
+              <label for="floatingInput email">Correo electrónico</label>
+            </div>
 
-          <div class="m-2">
-            <label for="exampleFormControlTextarea1" class="form-label">Motivo</label>
-            <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
-          </div>
+            <div class="m-2">
+              <label for="exampleFormControlTextarea1 Motivo" class="form-label">Motivo</label>
+              <textarea class="form-control" id="exampleFormControlTextarea1" rows="3" name="Motivo"></textarea>
+            </div>
+
+            <div class="m-2">
+              <button type="submit" class="btn btn-dark mb-3">Enviar</button>
+            </div>
+        </form>
+
 
 
     </main>
